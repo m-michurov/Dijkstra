@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CLionProjects/Dijkstra/binheap.h
+stdlib.h
+-
+
+E:/CLionProjects/Dijkstra/dijkstra.c
+graph.h
+E:/CLionProjects/Dijkstra/graph.h
+
+E:/CLionProjects/Dijkstra/errcodes.h
+
+E:/CLionProjects/Dijkstra/graph.c
+graph.h
+E:/CLionProjects/Dijkstra/graph.h
+
+E:/CLionProjects/Dijkstra/graph.h
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+stdio.h
+-
+errcodes.h
+E:/CLionProjects/Dijkstra/errcodes.h
+binheap.h
+E:/CLionProjects/Dijkstra/binheap.h
+
+E:/CLionProjects/Dijkstra/main.c
+stdio.h
+-
+graph.h
+E:/CLionProjects/Dijkstra/graph.h
+
