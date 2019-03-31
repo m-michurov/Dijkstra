@@ -36,6 +36,7 @@ int FindDistance(
                     if (current_distance >= OVERFLOW || graph->distance[v] >= OVERFLOW)
                     {
                         current_distance = OVERFLOW;
+
                         if (u == end)
                             overflow_counter += 1;
                     }
