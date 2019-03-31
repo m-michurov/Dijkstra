@@ -13,6 +13,7 @@ typedef struct {
     unsigned int * key;
 
     size_t heap_size;
+    size_t max_heap_size;
 } Heap;
 
 

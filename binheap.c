@@ -45,7 +45,7 @@ Heap * BuildHeap(
 
     new_heap->key = key;
     new_heap->array = array;
-    new_heap->heap_size = size;
+    new_heap->heap_size = new_heap->max_heap_size = size;
     new_heap->index = index;
 
     for (long long int i = new_heap->heap_size / 2 - 1; i >= 0; i--) {
@@ -83,7 +83,7 @@ int DecreaseKey(
 {
     static short buff;
 
-    if (key >= heap->key[element_value]) {
+    if (key >= heap->key[element_value] || element_value >= heap->max_heap_size) {
         return -1;
     }
 
