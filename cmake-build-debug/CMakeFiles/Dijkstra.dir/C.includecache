@@ -14,6 +14,12 @@ E:/CLionProjects/Dijkstra/dijkstra.c
 graph.h
 E:/CLionProjects/Dijkstra/graph.h
 
+E:/CLionProjects/Dijkstra/ensure.h
+stdio.h
+-
+stdlib.h
+-
+
 E:/CLionProjects/Dijkstra/errcodes.h
 
 E:/CLionProjects/Dijkstra/graph.c
@@ -39,4 +45,6 @@ stdio.h
 -
 graph.h
 E:/CLionProjects/Dijkstra/graph.h
+ensure.h
+E:/CLionProjects/Dijkstra/ensure.h
 

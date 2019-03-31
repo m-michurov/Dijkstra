@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include "graph.h"
+#include "ensure.h"
 
 
 int main(
@@ -14,63 +15,32 @@ int main(
     int start = 0;
     int end = 0;
 
-    unsigned int overflow = 0;
+    int result = 0;
 
     Graph * graph = NULL;
 
-    if (scanf("%d", &vertices) == EOF) {
-        puts("bad number of lines");
-        return SUCCESS;
-    }
-    if (scanf("%d %d", &start, &end) == EOF) {
-        puts("bad number of lines");
-        return SUCCESS;
-    }
-    if (!(start > 0 && start < vertices + 1) || !(end > 0 && end < vertices + 1)) {
-        puts("bad vertex");
-        return SUCCESS;
-    }
-    if (scanf("%d", &edges) == EOF) {
-        puts("bad number of lines");
-        return SUCCESS;
-    }
+    ensure(scanf("%d", &vertices) == 1, "bad number of lines", NULL, NULL, SUCCESS);
+    ensure(scanf("%d %d", &start, &end) == 2, "bad number of lines", NULL, NULL, SUCCESS);
+    ensure(scanf("%d", &edges) == 1, "bad number of lines", NULL, NULL, SUCCESS);
+
+    ensure(start > 0 && start < vertices + 1 && end > 0 && end < vertices + 1, "bad vertex", NULL, NULL, SUCCESS);
+    ensure(vertices >= 0 && vertices <= 5000, "bad number of vertices", NULL, NULL, SUCCESS);
+    ensure(edges >= 0 && edges <= (vertices - 1) * vertices / 2, "bad number of edges", NULL, NULL, SUCCESS);
 
     start--;
     end--;
 
-    if (!(vertices >= 0 && vertices <= 5000)) {
-        puts("bad number of vertices");
-        return SUCCESS;
-    }
-    if (!(edges >= 0 && edges <= (vertices - 1) * vertices / 2)) {
-        puts("bad number of edges");
-        return SUCCESS;
-    }
-
     graph = InitGraph((unsigned int) vertices, (unsigned int) edges, (short) start);
 
-    if (graph == NULL) {
-        puts("memory allocation error");
-        return ALLOC_ERROR;
-    }
+    ensure(graph != NULL, "memory allocation error", NULL, NULL, ALLOC_ERROR);
 
+    for (int k = 0; k < graph->edges; k++)
+    {
+        ensure(scanf("%d %d %d", &src, &dst, &length) == 3, "bad number of lines", FreeGraph, graph, SUCCESS);
 
-    for (int k = 0; k < graph->edges; k++) {
-        if (scanf("%d %d %d", &src, &dst, &length) == EOF) {
-            puts("bad number of lines");
-            FreeGraph(graph);
-            return SUCCESS;
-        }
-        if (!(src > 0 && src < graph->vertices + 1) || !(dst > 0 && dst < graph->vertices + 1)) {
-            puts("bad vertex");
-            FreeGraph(graph);
-            return SUCCESS;
-        }
-        if (!(length >= 0 && length <= INT_MAX)) {
-            puts("bad length");
-            FreeGraph(graph);
-            return SUCCESS;
-        }
+        ensure(src > 0 && src < graph->vertices + 1 && dst > 0 && dst < graph->vertices + 1,
+               "bad vertex", FreeGraph, graph, SUCCESS);
+        ensure(length >= 0 && length <= INT_MAX, "bad length", FreeGraph, graph, SUCCESS);
 
         src--;
         dst--;
@@ -79,10 +49,11 @@ int main(
         graph->adjacency_matrix[dst * graph->vertices + src] = (unsigned int) length;
     }
 
+    result = FindDistance(graph, (short) end);
 
-    overflow = FindDistance(graph, (short) end);
+    ensure(result != ALLOC_ERROR, "memory allocation error", FreeGraph, graph, ALLOC_ERROR);
 
-    PrintDistances(graph, (short) start, (short) end, overflow);
+    PrintDistances(graph, (short) start, (short) end, (unsigned int) result);
 
     FreeGraph(graph);
 

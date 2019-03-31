@@ -83,6 +83,12 @@
 		<Unit filename="E:/CLionProjects/Dijkstra/dijkstra.c">
 			<Option target="Dijkstra"/>
 		</Unit>
+		<Unit filename="E:/CLionProjects/Dijkstra/ensure.c">
+			<Option target="Dijkstra"/>
+		</Unit>
+		<Unit filename="E:/CLionProjects/Dijkstra/ensure.h">
+			<Option target="Dijkstra"/>
+		</Unit>
 		<Unit filename="E:/CLionProjects/Dijkstra/errcodes.h">
 			<Option target="Dijkstra"/>
 		</Unit>

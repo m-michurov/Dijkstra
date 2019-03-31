@@ -31,7 +31,7 @@ typedef struct {
 
 
 void FreeGraph(
-        Graph * graph);
+        void * graph);
 
 
 Graph * InitGraph(
@@ -40,7 +40,7 @@ Graph * InitGraph(
         short vertex);
 
 
-unsigned int FindDistance(
+int FindDistance(
         Graph * graph,
         short end);
 

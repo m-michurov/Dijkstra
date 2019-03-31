@@ -2,16 +2,16 @@
 
 
 void FreeGraph(
-        Graph * graph)
+        void * graph)
 {
     if (graph == NULL)
         return;
 
-    free(graph->distance);
-    free(graph->indices);
-    free(graph->parent);
-    free(graph->vertices_array);
-    free(graph->adjacency_matrix);
+    free(((Graph *)graph)->distance);
+    free(((Graph *)graph)->indices);
+    free(((Graph *)graph)->parent);
+    free(((Graph *)graph)->vertices_array);
+    free(((Graph *)graph)->adjacency_matrix);
 
     free(graph);
 }
@@ -66,6 +66,9 @@ void PrintDistances(
         short end,
         unsigned int overflow)
 {
+    if (graph == NULL)
+        return;
+
     for (int k = 0; k < graph->vertices; k++) {
         if ((graph->parent[k] != NO_PARENT && graph->distance[k] != OVERFLOW) || k == start) {
             printf("%d ", graph->distance[k]);

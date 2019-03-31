@@ -176,6 +176,33 @@ dijkstra.c.s:
 	$(MAKE) -f CMakeFiles\Dijkstra.dir\build.make CMakeFiles/Dijkstra.dir/dijkstra.c.s
 .PHONY : dijkstra.c.s
 
+ensure.obj: ensure.c.obj
+
+.PHONY : ensure.obj
+
+# target to build an object file
+ensure.c.obj:
+	$(MAKE) -f CMakeFiles\Dijkstra.dir\build.make CMakeFiles/Dijkstra.dir/ensure.c.obj
+.PHONY : ensure.c.obj
+
+ensure.i: ensure.c.i
+
+.PHONY : ensure.i
+
+# target to preprocess a source file
+ensure.c.i:
+	$(MAKE) -f CMakeFiles\Dijkstra.dir\build.make CMakeFiles/Dijkstra.dir/ensure.c.i
+.PHONY : ensure.c.i
+
+ensure.s: ensure.c.s
+
+.PHONY : ensure.s
+
+# target to generate assembly for a file
+ensure.c.s:
+	$(MAKE) -f CMakeFiles\Dijkstra.dir\build.make CMakeFiles/Dijkstra.dir/ensure.c.s
+.PHONY : ensure.c.s
+
 graph.obj: graph.c.obj
 
 .PHONY : graph.obj
@@ -245,6 +272,9 @@ help:
 	@echo ... dijkstra.obj
 	@echo ... dijkstra.i
 	@echo ... dijkstra.s
+	@echo ... ensure.obj
+	@echo ... ensure.i
+	@echo ... ensure.s
 	@echo ... graph.obj
 	@echo ... graph.i
 	@echo ... graph.s
