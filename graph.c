@@ -20,7 +20,7 @@ void FreeGraph(
 Graph * InitGraph(
         unsigned int vertices,
         unsigned int edges,
-        short vertex)
+        unsigned short vertex)
 {
     Graph * graph = (Graph *) malloc(sizeof(Graph));
 
@@ -50,7 +50,7 @@ Graph * InitGraph(
     graph->vertices = vertices;
     graph->edges = edges;
 
-    for (short k = 0; k < vertices; k++)
+    for (unsigned short k = 0; k < vertices; k++)
         graph->vertices_array[k] = k;
 
     for (unsigned int k = 0; k < vertices; k++)
@@ -62,8 +62,8 @@ Graph * InitGraph(
 
 void PrintDistances(
         Graph * graph,
-        short start,
-        short end,
+        unsigned short start,
+        unsigned short end,
         unsigned int overflow)
 {
     if (graph == NULL)
@@ -92,7 +92,7 @@ void PrintDistances(
     else if (graph->parent[end] != NO_PARENT || start == end) {
         while (graph->parent[end] != NO_PARENT) {
             printf("%d ", end + 1);
-            end = graph->parent[end];
+            end = (unsigned short) graph->parent[end];
         }
         printf("%d", start + 1);
     }

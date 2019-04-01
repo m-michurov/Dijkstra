@@ -11,6 +11,7 @@
 
 #include "errcodes.h"
 #include "binheap.h"
+#include "ensure.h"
 
 
 #define NO_PARENT   -1
@@ -22,7 +23,7 @@ typedef struct {
     unsigned int * distance;
     unsigned int * indices;
 
-    short * vertices_array;
+    unsigned short * vertices_array;
     short * parent;
 
     unsigned int vertices;
@@ -37,18 +38,18 @@ void FreeGraph(
 Graph * InitGraph(
         unsigned int vertices,
         unsigned int edges,
-        short vertex);
+        unsigned short vertex);
 
 
 int FindDistance(
         Graph * graph,
-        short end);
+        unsigned short end);
 
 
 void PrintDistances(
         Graph * graph,
-        short start,
-        short end,
+        unsigned short start,
+        unsigned short end,
         unsigned int overflow);
 
 #endif

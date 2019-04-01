@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "E:/CLionProjects/Dijkstra/binheap.c" "E:/CLionProjects/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/binheap.c.obj"
   "E:/CLionProjects/Dijkstra/dijkstra.c" "E:/CLionProjects/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/dijkstra.c.obj"
-  "E:/CLionProjects/Dijkstra/ensure.c" "E:/CLionProjects/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/ensure.c.obj"
   "E:/CLionProjects/Dijkstra/graph.c" "E:/CLionProjects/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/graph.c.obj"
   "E:/CLionProjects/Dijkstra/main.c" "E:/CLionProjects/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/main.c.obj"
   )

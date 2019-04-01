@@ -6,13 +6,12 @@ CMakeFiles/Dijkstra.dir/binheap.c.obj: ../binheap.h
 
 CMakeFiles/Dijkstra.dir/dijkstra.c.obj: ../binheap.h
 CMakeFiles/Dijkstra.dir/dijkstra.c.obj: ../dijkstra.c
+CMakeFiles/Dijkstra.dir/dijkstra.c.obj: ../ensure.h
 CMakeFiles/Dijkstra.dir/dijkstra.c.obj: ../errcodes.h
 CMakeFiles/Dijkstra.dir/dijkstra.c.obj: ../graph.h
 
-CMakeFiles/Dijkstra.dir/ensure.c.obj: ../ensure.c
-CMakeFiles/Dijkstra.dir/ensure.c.obj: ../ensure.h
-
 CMakeFiles/Dijkstra.dir/graph.c.obj: ../binheap.h
+CMakeFiles/Dijkstra.dir/graph.c.obj: ../ensure.h
 CMakeFiles/Dijkstra.dir/graph.c.obj: ../errcodes.h
 CMakeFiles/Dijkstra.dir/graph.c.obj: ../graph.c
 CMakeFiles/Dijkstra.dir/graph.c.obj: ../graph.h
