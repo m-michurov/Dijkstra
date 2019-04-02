@@ -11,7 +11,6 @@
 
 #include "errcodes.h"
 #include "binheap.h"
-#include "ensure.h"
 
 
 #define NO_PARENT   -1

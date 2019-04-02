@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-E:/CLionProjects/Dijkstra/binheap.c
-binheap.h
-E:/CLionProjects/Dijkstra/binheap.h
-
 E:/CLionProjects/Dijkstra/binheap.h
 stdlib.h
 -
@@ -43,8 +39,6 @@ errcodes.h
 E:/CLionProjects/Dijkstra/errcodes.h
 binheap.h
 E:/CLionProjects/Dijkstra/binheap.h
-ensure.h
-E:/CLionProjects/Dijkstra/ensure.h
 
 E:/CLionProjects/Dijkstra/main.c
 stdio.h
