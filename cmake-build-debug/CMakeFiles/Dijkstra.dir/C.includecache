@@ -6,31 +6,19 @@
 
 #IncludeRegexTransform: 
 
-E:/CLionProjects/Dijkstra/binheap.c
-binheap.h
-E:/CLionProjects/Dijkstra/binheap.h
-
-E:/CLionProjects/Dijkstra/binheap.h
+H:/NSUProgLabs/Dijkstra/binheap.h
 stdlib.h
 -
 
-E:/CLionProjects/Dijkstra/dijkstra.c
-graph.h
-E:/CLionProjects/Dijkstra/graph.h
-
-E:/CLionProjects/Dijkstra/ensure.h
+H:/NSUProgLabs/Dijkstra/ensure.h
 stdio.h
 -
 stdlib.h
 -
 
-E:/CLionProjects/Dijkstra/errcodes.h
+H:/NSUProgLabs/Dijkstra/errcodes.h
 
-E:/CLionProjects/Dijkstra/graph.c
-graph.h
-E:/CLionProjects/Dijkstra/graph.h
-
-E:/CLionProjects/Dijkstra/graph.h
+H:/NSUProgLabs/Dijkstra/graph.h
 stdlib.h
 -
 string.h
@@ -40,17 +28,15 @@ limits.h
 stdio.h
 -
 errcodes.h
-E:/CLionProjects/Dijkstra/errcodes.h
+H:/NSUProgLabs/Dijkstra/errcodes.h
 binheap.h
-E:/CLionProjects/Dijkstra/binheap.h
-ensure.h
-E:/CLionProjects/Dijkstra/ensure.h
+H:/NSUProgLabs/Dijkstra/binheap.h
 
-E:/CLionProjects/Dijkstra/main.c
+H:/NSUProgLabs/Dijkstra/main.c
 stdio.h
 -
 graph.h
-E:/CLionProjects/Dijkstra/graph.h
+H:/NSUProgLabs/Dijkstra/graph.h
 ensure.h
-E:/CLionProjects/Dijkstra/ensure.h
+H:/NSUProgLabs/Dijkstra/ensure.h
 

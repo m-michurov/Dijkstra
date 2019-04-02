@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/CLionProjects/Dijkstra/binheap.c" "E:/CLionProjects/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/binheap.c.obj"
-  "E:/CLionProjects/Dijkstra/dijkstra.c" "E:/CLionProjects/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/dijkstra.c.obj"
-  "E:/CLionProjects/Dijkstra/graph.c" "E:/CLionProjects/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/graph.c.obj"
-  "E:/CLionProjects/Dijkstra/main.c" "E:/CLionProjects/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/main.c.obj"
+  "H:/NSUProgLabs/Dijkstra/binheap.c" "H:/NSUProgLabs/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/binheap.c.obj"
+  "H:/NSUProgLabs/Dijkstra/dijkstra.c" "H:/NSUProgLabs/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/dijkstra.c.obj"
+  "H:/NSUProgLabs/Dijkstra/graph.c" "H:/NSUProgLabs/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/graph.c.obj"
+  "H:/NSUProgLabs/Dijkstra/main.c" "H:/NSUProgLabs/Dijkstra/cmake-build-release/CMakeFiles/Dijkstra.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
